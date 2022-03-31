@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">trabajo</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="iniciar_sesion">iniciar sesión</string>
+    <string name="contrasena">Contrasena</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="todo">TODO</string>
+    <string name="salir">Salir</string>
+</resources>
