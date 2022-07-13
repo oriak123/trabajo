@@ -9,7 +9,35 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4793b23c-0143-4651-8539-717e9f0543dd" name="Default Changelist" comment="" />
+    <list default="true" id="4793b23c-0143-4651-8539-717e9f0543dd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MyApp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proximate/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlinIntermedioMoureDev/app/src/main/java/com/example/kotlinintermediomouredev/Designer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlinIntermedioMoureDev/app/src/main/java/com/example/kotlinintermediomouredev/Game.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlinIntermedioMoureDev/app/src/main/java/com/example/kotlinintermediomouredev/MyNestedAndInnerClasses.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlinIntermedioMoureDev/app/src/main/java/com/example/kotlinintermediomouredev/Person.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlinIntermedioMoureDev/app/src/main/java/com/example/kotlinintermediomouredev/Programmer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlinIntermedioMoureDev/app/src/main/java/com/example/kotlinintermediomouredev/Vehicle.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlinIntermedioMoureDev/app/src/main/java/com/example/kotlinintermediomouredev/Visibility.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlinIntermedioMoureDev/app/src/main/java/com/example/kotlinintermediomouredev/work.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlinMoureDev/app/src/main/java/com/example/kotlinmouredev/Programmer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trabajo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyApp/app/src/main/java/com/example/myapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../MyApp/app/src/main/java/com/example/myapp/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proximate/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proximate/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabajo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trabajo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabajo/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../trabajo/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabajo/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trabajo/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabajo/app/src/main/java/com/example/trabajo/PrimeraActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabajo/app/src/main/java/com/example/trabajo/SegundaActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabajo/app/src/main/java/com/example/trabajo/SplashActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabajo/app/src/main/res/layout/primera_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trabajo/app/src/main/res/layout/primera_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabajo/app/src/main/res/layout/segunda_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trabajo/app/src/main/res/layout/segunda_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabajo/app/src/main/res/layout/splash_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trabajo/app/src/main/res/layout/splash_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabajo/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trabajo/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabajo/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trabajo/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabajo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../trabajo/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +49,11 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="277Vt1jZEN5gVhTitpBGSDf5iou" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,7 +63,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Proximate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../prueba-tecnica" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />

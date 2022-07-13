@@ -6,4 +6,10 @@
     <string name="registrarse">Registrarse</string>
     <string name="todo">TODO</string>
     <string name="salir">Salir</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="image1">imagw1</string>
+    <string name="image2">TODO</string>
+    <string name="image3">image3</string>
+    <string name="image4">image4</string>
 </resources>

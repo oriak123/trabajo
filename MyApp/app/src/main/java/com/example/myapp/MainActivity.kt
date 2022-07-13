@@ -238,7 +238,208 @@ fun main (){
 //fun sueldo (nombre:String,valor:Double, horas:Int){
 
 //}
-public static fun () {
-    
+
+// LAMBDAS
+
+/*
+fun main (){
+
+    val myLambda : (String) ->Int = {valor ->valor.length}
+    val myLambdaEjecutada: Int = myLambda("Hola platzi")
+    println(myLambdaEjecutada)
+
+    val saludos = listOf("Hello", "Hola", "Ciao")
+    val longitudDeSaludos = saludos.map(myLambda)
+    println(longitudDeSaludos)
+}
+*/
+
+//HIGH ORDER FUNCTIONS
+
+/*
+fun main (args: Array<String>){
+    val largoDelValorInicial = superFuncion(valorIncial = "Hola!") { valor ->
+        valor.length
+    }
+    println(largoDelValorInicial)
+
+    val lambda: () ->String = funcionInception("Enrique")
+    val valorLambda: String = lambda()
+    println(valorLambda)
 }
 
+fun superFuncion(valorIncial: String, block : (String) -> Int) : Int {
+    return  block(valorIncial)
+}
+
+fun funcionInception(nombre:  String) : () ->String{
+    return{
+        "Hola desde la lambda $nombre"
+    }
+}
+*/
+
+// LET
+/*
+fun  main (){
+
+    var nombre : String? = null
+    nombre?.let {
+        valor -> println("La variable no es nula, es : $nombre")
+    }
+
+    nombre = "Giuseppe"
+    nombre?.let {
+        valor -> println("La variable no es nula, es : $nombre")
+    }
+}
+ */
+
+//WITH
+
+/*
+fun main (){
+
+    val colores = listOf("Amarillo", "Azul", "Rojo")
+    with(colores) {
+        println("Nuestros colores son : $this")
+        println("La cantidad de colores es: $size")
+    }
+
+}
+
+ */
+
+// RUN
+
+/*fun main (){
+
+    val moviles = mutableListOf("Huawei 1","Huawei 2", "motorola 1", "motorola 2")
+        .run {
+            removeIf{movil -> movil.contains("Huawei")}
+            this
+        }
+    println(moviles)
+}
+ */
+
+// APPLY
+
+/*
+fun main(){
+
+    val moviles = mutableListOf("Huawei 1","Huawei 2", "motorola 1", "motorola 2").apply {
+        removeIf{movil -> movil.contains("Huawei")}
+    }
+    println(moviles)
+
+    val colores : MutableList<String>? = mutableListOf("Amarillo", "azul", "rojo")
+    colores?.apply {
+        println("Los colores de la lista son: $this")
+        println("La cantidad de colores son $size")
+    }
+}
+ */
+
+// ALSO
+
+/*
+fun main(){
+
+    val moviles = mutableListOf("Huawei 1","Huawei 2", "motorola 1", "motorola 2").also {
+        Lista -> println("El valor original de la lista es: $Lista")
+    }.asReversed()
+
+    println(moviles)
+}
+ */
+
+// Proyecto
+
+const val RESPUESTA_AFIRMATIVA = "✅"
+const val RESPUESTA_NEGATIVA = "❌"
+const val RESPUESTA_DUDOSA = "?"
+
+val respuestas = mapOf(
+    "Si" to RESPUESTA_AFIRMATIVA,
+    "Es cierto" to RESPUESTA_AFIRMATIVA,
+    "Totalmente" to RESPUESTA_AFIRMATIVA,
+    "Sin duda" to RESPUESTA_AFIRMATIVA,
+    "Pregunta en otro momento" to RESPUESTA_DUDOSA,
+    "No puedo decirte en este momento" to RESPUESTA_DUDOSA,
+    "Puede que si o puede que no" to RESPUESTA_DUDOSA,
+    "No va a suceder" to RESPUESTA_NEGATIVA,
+    "No cuentes con ello" to RESPUESTA_NEGATIVA,
+    "Definitivamente no" to RESPUESTA_NEGATIVA,
+    "No lo creo" to RESPUESTA_NEGATIVA,
+)
+fun main(){
+    println("Hola soy tu bola 8 magica creada en Kotlin. Cual de estas opciones deseas realizar?")
+    println("1. Realizar una prequnta")
+    println("2. Revisar todas las respuestas")
+    println("3. Salir")
+
+    val valorIngresado = readLine ()
+
+    when (valorIngresado){
+        "1" -> realizarPregunta()
+        "2" -> mostrarRespuestas ()
+        "3" -> salir()
+        else -> mostarError()
+    }
+}
+
+fun mostarError() {
+    println("Opcion no valida, intenta de nuevo.")
+    Volver()
+}
+
+fun salir() {
+    println("Hasta luego!")
+}
+
+fun mostrarRespuestas() {
+    println("Elije que tipo de respuestas quieres ver: ")
+    println("1. Todas las respuestas")
+    println("2. Respuestas positivas")
+    println("3. Respuestas negativas")
+    println("4. Respuestas dudosas")
+
+    val  opcionIngresada = readLine()
+
+    when (opcionIngresada) {
+        "1" -> mostrarRespuestaPorTipo()
+        "2" -> mostrarRespuestaPorTipo(tipoDeRespuesta = RESPUESTA_AFIRMATIVA)
+        "3" -> mostrarRespuestaPorTipo(tipoDeRespuesta = RESPUESTA_NEGATIVA)
+        "4" -> mostrarRespuestaPorTipo(tipoDeRespuesta = RESPUESTA_DUDOSA)
+    }
+}
+
+fun mostrarRespuestaPorTipo(tipoDeRespuesta : String = "TODOS") {
+    when (tipoDeRespuesta) {
+        "TODOS" -> respuestas.keys.forEach { respuestas -> println(respuestas) }
+
+        RESPUESTA_AFIRMATIVA -> respuestas.filterValues { values -> values == RESPUESTA_AFIRMATIVA }
+            .also { respuestasPositivas -> println(respuestasPositivas.keys) }
+
+        RESPUESTA_NEGATIVA -> respuestas.filterValues { values -> values == RESPUESTA_NEGATIVA }
+            .also { respuestasNegativas -> println(respuestasNegativas.keys) }
+
+        RESPUESTA_DUDOSA -> respuestas.filterValues { values -> values == RESPUESTA_DUDOSA }
+            .also { respuestasDudosas -> println(respuestasDudosas.keys) }
+    }
+    Volver()
+}
+
+fun Volver() {
+    main()
+}
+
+fun realizarPregunta() {
+    println("Cual es tu pregunta?")
+    readLine()
+    println("Asi que esa era tu pregunta... La respuesta es: ")
+    val respuestaGenerada = respuestas.keys.random()
+    println(respuestaGenerada)
+    Volver()
+}
